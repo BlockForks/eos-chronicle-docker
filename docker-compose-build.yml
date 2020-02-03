@@ -1,8 +1,8 @@
 version: '3.0'
 services:
   chronicle:
-    build: ./chronicle
-    image: chronicle:built
+    build: ./chronicle-ext
+    image: chronicle-ext:built
     volumes:
       - ./chronicle:/opt/data
     environment:
