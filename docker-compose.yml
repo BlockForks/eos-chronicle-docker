@@ -9,8 +9,8 @@ services:
     environment:
       - DATA_DIR=./data
       - MODE=scan
-      - HOST=mainnet.telosusa.io #ip address or hostname of nodeos with state-history plogin
-      - PORT=8890 #port number of state history plugin
+      - HOST=localhost #ip address or hostname of nodeos with state-history plogin
+      - PORT=8080 #port number of state history plugin
       - WS_HOST=localhost # ip address or hostname json's consumer
       - WS_PORT=8800 # port number of json's consumer
       - SKIP_BLOCK_EVENTS=true
@@ -20,5 +20,5 @@ services:
       - EXP_WS_PATH=/
       - EXP_WS_MAX_QEUEU=10000
       - IRREVERSIBLE_ONLY=false
-     # - START_BLOCK=62110627
+#      - START_BLOCK=32000730
       - STALE_DEADLINE=30000
